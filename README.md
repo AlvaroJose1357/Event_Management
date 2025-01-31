@@ -1,6 +1,6 @@
 # Aplicación de Gestión de Eventos
 
-Esta es una aplicación full-stack para gestionar eventos. Permite a los usuarios registrarse, iniciar sesión, crear eventos, filtrarlos, actualizarlos y eliminarlos. El proyecto está dividido en dos partes principales: el **backend** (construido con Node.js, Express y MongoDB) y el **frontend** (construido con React y TypeScript).
+Esta es una aplicación full-stack para gestionar eventos. Permite a los usuarios registrarse, iniciar sesión, crear eventos, filtrarlos, actualizarlos y eliminarlos. El proyecto está dividido en dos partes principales: el **backend** (construido con Node.js, Express, Typescript y MongoDB) y el **frontend** (construido con React, TypeScript, Tailwind, Heroicons, Lucide, Toastify, etc).
 
 ---
 
@@ -23,7 +23,7 @@ Sigue estos pasos para configurar y ejecutar la aplicación:
 1. **Clonar el repositorio:**
 
    ```bash
-   git clone https://github.com/jeperea45/Event_Management
+   git clone https://github.com/AlvaroJose1357/Event_Management
    cd Event_Management/backend
    ```
 
