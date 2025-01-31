@@ -38,15 +38,16 @@ Sigue estos pasos para configurar y ejecutar la aplicación:
    - Crea un archivo `.env` en la raíz del proyecto.
    - Agrega las siguientes variables:
      ```env
-     MONGO_URI=<tu-cadena-de-conexión-de-mongodb>
+     MONGO_URL=<tu-cadena-de-conexión-de-mongodb>
      PORT=5000
      JWT_SECRET=<tu-clave-secreta-para-jwt>
+     ORIGIN=<tu servidor del Frontend>
      ```
 
 4. **Ejecutar el servidor:**
 
    ```bash
-   npm start
+   npm run dev
    ```
 
    El servidor estará disponible en `http://localhost:5000`.
@@ -67,7 +68,15 @@ Sigue estos pasos para configurar y ejecutar la aplicación:
    npm install
    ```
 
-3. **Ejecutar el servidor de desarrollo:**
+3. **Configurar variables de entorno:**
+
+   - Crea un archivo `.env` en la raíz del proyecto.
+   - Agrega las siguientes variables:
+     ```env
+     VITE_REACT_APP_API_ENV = http://localhost:5000/api
+     ```
+
+4. **Ejecutar el servidor de desarrollo:**
 
    ```bash
    npm run dev
