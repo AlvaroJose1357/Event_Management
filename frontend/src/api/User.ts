@@ -15,6 +15,6 @@ export const logoutRequest = async () => {
 export const perfilRequest = async () => {
   return axiosInstance.get("/users/profile");
 };
-export const verifyRequest = async () => {
-  return axiosInstance.get("/users/verify");
+export const verifyRequest = async (token) => {
+  return axiosInstance.get("/users/verify", token);
 };

@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Layout from "../layouts/Layout";
-import Loading from "../components/Loading";
+// import Loading from "../components/Loading";
 // import RegisterPage from "../pages/RegisterPage";
 // import LoginPage from "../pages/LoginPage";
 // import Error404 from "../pages/Error404";
@@ -21,7 +21,7 @@ export default function Router() {
           <Route
             path="/"
             element={
-              <Suspense fallback={<Loading />}>
+              <Suspense fallback={<div>Loading...</div>}>
                 <IndexPage />
               </Suspense>
             }
@@ -30,7 +30,7 @@ export default function Router() {
           <Route
             path="/*"
             element={
-              <Suspense fallback={<Loading />}>
+              <Suspense fallback={<div>Loading...</div>}>
                 <Error404Page />
               </Suspense>
             }
@@ -38,7 +38,7 @@ export default function Router() {
           <Route
             path="/register"
             element={
-              <Suspense fallback={<Loading />}>
+              <Suspense fallback={<div>Loading...</div>}>
                 <RegisterPage />
               </Suspense>
             }
