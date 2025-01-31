@@ -5,11 +5,11 @@ import Layout from "../layouts/Layout";
 // import RegisterPage from "../pages/RegisterPage";
 // import LoginPage from "../pages/LoginPage";
 // import Error404 from "../pages/Error404";
-import EventsPage from "../pages/EventsPage";
+// import EventsPage from "../pages/EventsPage";
 import ProtectedRoute from "./ProtectedRoute";
 
 const IndexPage = lazy(() => import("../pages/HomePage"));
-// const EventsPage = lazy(() => import("../pages/EventsPage"));
+const EventsPage = lazy(() => import("../pages/EventsPage"));
 const LoginPage = lazy(() => import("../pages/LoginPage"));
 const RegisterPage = lazy(() => import("../pages/RegisterPage"));
 const Error404Page = lazy(() => import("../pages/Error404"));
@@ -56,9 +56,9 @@ export default function Router() {
             <Route
               path="/events"
               element={
-                // <Suspense fallback={<div>Loading...</div>}>
-                <EventsPage />
-                // </Suspense>
+                <Suspense fallback={<div>Loading...</div>}>
+                  <EventsPage />
+                </Suspense>
               }
             />
           </Route>
